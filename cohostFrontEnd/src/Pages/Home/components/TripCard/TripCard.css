@@ -1,0 +1,148 @@
+.TripCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 18rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    overflow: hidden;
+    transition: 250ms;
+    cursor:pointer;
+    flex-direction: column;
+    margin: 5px 0;
+}
+.TripCard:hover{
+    transform: translateY(-5px);
+}
+.trip-card-img-container{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trip-card-img-container>img{
+    min-width: 100%;
+    min-height: 100%;
+}
+.trip-card-img-container>img:hover{
+    outline: none;
+}
+.trip-card-img-overlay{
+    box-shadow: inset 0px -50px 31px -20px #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.trip-card-body{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    color: rgb(177,177,177);
+    padding: 10px;
+    padding-top: 0;
+}
+.trip-card-header>h3{
+    color: rgb(114,114,114);
+    font-size: 1.4rem;
+    max-width: 95%;
+}
+.card-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.info-section, .guest-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+}
+.info-section>i{
+    margin-right: 5px;
+}
+.guest-list{
+    flex-direction: row;
+    padding-left: .5rem;
+}
+.guest{
+    color: white;
+    background-color: rgb(177,177,177);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -.5rem;
+}
+
+@media(max-width:600px){
+    .TripCard{
+        border-radius: .3rem;
+        width: 8rem;
+        height: 10rem;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .info-section{
+        display: none;
+    }
+    .trip-card-header>h3{
+        font-size: 1rem;
+        overflow: hidden;
+    }
+    .trip-card-img-overlay{
+        display: none;
+    }
+    .trip-card-body{
+        height: 35%;
+        position: relative;
+        overflow: visible;
+    }
+    .trip-card-img-container{
+        height: 50%;
+        width: 60%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .3rem;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .trip-card-img-container>img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .card-info{
+        position: absolute;
+        top: -80px;
+        right: 3px;
+    }
+    .guest-list{
+        flex-direction: column;
+        height: 5rem;
+        width: 2rem;
+        z-index: 3;
+        padding: 0;
+    }
+    .guest{
+        height: 1.75rem;
+        width: 1.75rem;
+        font-size: .75rem;
+        margin-left: 0;
+        margin-top: -.25rem;
+    }
+}
+

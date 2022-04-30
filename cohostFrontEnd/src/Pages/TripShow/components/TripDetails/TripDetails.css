@@ -1,0 +1,135 @@
+.trip-details{
+    min-height: 40rem;
+    display: flex;
+    flex-direction: row;
+}
+.trip-info>h3,.bulletin>h3{
+    height: 5%;
+}
+.trip-info,.bulletin{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trip-info>p{
+    font-size: 1.2rem;
+    margin: 1rem 4rem;
+}
+.trip-info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px solid rgb(200,200,200);
+    padding: 1rem;
+}
+.trip-info-section>span{
+    font-size: 1.5rem;
+    width: 50%;
+}
+.trip-info-section>.trip-location{
+    font-size: 1.2rem;
+}
+.trip-info-section>.to{
+    font-size: 1.2rem;
+}
+.info-btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+.info-btns>button{
+    border: none;
+    background: none;
+    color: rgb(114,114,114);
+}
+.bulletin{
+    justify-content: space-between;
+    border-left: 1px solid rgb(200,200,200);
+}
+.bulletin-body{
+    overflow-y: scroll;
+    height: 80%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 90%;
+    min-height: 25rem;
+}
+.bulletin-body::-webkit-scrollbar {
+    display: none;
+}
+.bulletin-input{
+    display: flex;
+}
+.bulletin-input>input{
+    min-height: 2rem;
+    height: fit-content;
+    border: none;
+    background-color: rgb(200,200,200);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding-left: 10px;
+    padding-right: 1.5rem;
+    width: 90%;
+}
+.bulletin-input>input:focus{
+    outline: none;
+}
+.bulletin-input>button{
+    border: 2px solid white;
+    background-color: #FBA9A0;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: -1.2rem;
+    padding-right: 3px;
+    color: rgb(114,114,114);
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(200,200,200);
+    width: 95%;
+    padding: 5px 0;
+}
+.post>h4{
+    font-size: 1.2rem;
+    width: fit-content;
+    margin-bottom: 0;
+    color: rgb(177,177,177);
+}
+.post>p{
+    margin: 0;
+    text-align: start;
+    width: 75%;
+    padding-left: 10px;
+}
+.qty{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    margin-top: -.5rem;
+}
+@media(max-width:1000px){
+    .trip-details{
+        flex-direction: column;
+        align-items: center;
+    }
+    .trip-info,.bulletin{
+        height: 50%;
+        width: 90%;
+    }
+    .bulletin{
+        border-left: none;
+        border-top: 1px solid rgb(200,200,200);
+    }
+    .trip-info-section>span{
+        width: 90%;
+    }
+    .trip-info>p{
+        margin: 1rem 0;
+    }
+}

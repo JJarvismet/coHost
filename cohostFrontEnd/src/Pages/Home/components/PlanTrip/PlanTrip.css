@@ -1,0 +1,55 @@
+.PlanTrip{
+    height: 6rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+    padding: 20px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+}
+.plan-form-item{
+    border: none;
+    font-size: 1.8rem;
+    height: 100%;
+    color: rgb(113,113,113);
+    min-width: 50px;
+}
+.plan-form-item::placeholder{
+    color: rgb(177, 177, 177);
+}
+.plan-form-item:focus{
+    outline: none;
+}
+#lets-go{
+    border: none;
+    background-color: #FBA9A0;
+    padding: .8rem 2.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    min-width: 165px;
+}
+@media (max-width:1500px) {
+    .plan-form-item.location{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .PlanTrip{
+        flex-direction: column;
+        align-items: center;
+        height: 8rem;
+        padding: .5rem;
+    }
+    .plan-form-item{
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+}

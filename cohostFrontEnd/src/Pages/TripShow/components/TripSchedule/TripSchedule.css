@@ -1,0 +1,147 @@
+.day{
+    padding: 1rem;
+}
+.day-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.day-header>h3{
+    margin: .5rem 0;
+}
+.day-header>button{
+    background: none;
+    border: none;
+}
+.day-header>button>i{
+    color: rgb(114,114,114);
+}
+.day-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Mark{
+    border-bottom: 1px solid rgb(200,200,200);
+    width: 85%;
+}
+.mark-header{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    align-items: center;
+    position: relative;
+}
+.mark-header>h5{
+    margin: 0;
+    margin-left: 1rem;
+    color: rgb(114,114,114);
+}
+.mark-header>i{
+    color: #FBA9A0;
+}
+.mark-body{
+    display: none;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: inherit;
+    box-shadow: none;
+    outline: none;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-body{
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.accordion-body>p, .accordion-body>span{
+    margin-bottom: .5rem;
+}
+.accordion-body>button{
+    border: none;
+    background: none;
+    color: rgb(114,114,114);
+}
+.accordion-button{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+
+
+
+
+
+.mark-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0;
+    width: 90%;
+}
+.mark-options>span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.whichNew{
+    background-color: #FBA9A0;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+    border-radius: .5rem;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 10rem;
+    cursor: pointer;
+    transition: 200ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.whichNew:hover{
+    transform: translateY(-5px);
+}
+.whichNew>i{
+    padding-bottom: 10%;
+    color: white;
+}
+.show-body{
+    background-color: red;
+}
+
+
+@media(max-width:800px){
+    .whichNew{
+        width: 8rem;
+    }
+    .Mark{
+        width: 100%;
+    }
+    .mark-header>h5{
+        font-size: 1rem;
+    }
+    .mark-options{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 3rem;
+        width: 90%;
+        height: 30rem;
+    }
+}

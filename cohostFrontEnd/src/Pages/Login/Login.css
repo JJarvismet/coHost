@@ -1,0 +1,70 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#fancy-header{
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+#fancy-header>h1{
+    width: 100%;
+}
+#fancy-header>p{
+    margin-top: -1rem;
+    margin-left: 6.5rem;
+    color: #FBA9A0;
+}
+.floating-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.floating-form>form>input{
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+    border-radius: .25rem;
+    height: 3rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+}
+.floating-form>form>input:focus{
+    outline: none;
+}
+.floating-form>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.floating-form>form>button{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #FBA9A0;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+    border-radius: .25rem;
+    height: 3rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.floating-form>button>i{
+    transform: translateY(2px);
+}
+.floating-form>p{
+    color: rgb(114,114,114);
+}
+@media(max-width:900px){
+    #fancy-header>p{
+        margin: 0;
+    }
+}

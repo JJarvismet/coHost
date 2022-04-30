@@ -1,0 +1,40 @@
+.TripBoxNav>ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    padding: 0;
+}
+.tripNavItem{
+    color:rgb(177, 177, 177);
+    font-size: 1.2rem;
+    list-style: none;
+    border-bottom: 2px solid rgb(177, 177, 177);
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.selected{
+    border-bottom: 4px solid #FBA9A0;
+    color: #FBA9A0;
+    transform: translateY(1px);
+}
+.box-filler{
+    font-style: italic;
+    color: rgb(177, 177, 177);
+}
+@media(max-width:500px){
+    .TripBoxNav>ul{
+        margin-left: 0;
+    }
+    .TripBoxNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tripNavItem{
+        width: 8rem;
+    }
+}

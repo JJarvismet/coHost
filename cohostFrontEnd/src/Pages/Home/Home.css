@@ -1,0 +1,19 @@
+.content-label{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: rgb(114, 114, 114);
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0;
+}
+.Home>.page-header{
+    margin-bottom: 3rem;
+}
+.fa-arrow-right-from-bracket{
+    transform: rotate(180deg);
+    color: rgb(200,200,200);
+}

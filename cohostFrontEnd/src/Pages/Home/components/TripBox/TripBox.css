@@ -1,0 +1,51 @@
+.TripBox{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+    border-radius: .5rem;
+}
+.trip-box-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    min-height: 30rem;
+}
+.trip-card-casing{
+    text-decoration: none;
+}
+.rec.rec-arrow{
+    background-color: white;
+    color: rgb(201, 201, 201);
+    border: 2px solid rgb(201, 201, 201);
+}
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+.rec-dot{
+    visibility: hidden;
+}
+.rec.rec-arrow-left:hover:enabled,
+.rec.rec-arrow-right:hover:enabled{
+    background-color: rgb(201, 201, 201);
+}
+.rec.rec-arrow-left:focus:enabled,
+.rec.rec-arrow-right:focus:enabled{
+    background-color: white;
+    color: rgb(201, 201, 201);
+    border: 2px solid rgb(201, 201, 201);
+}
+.small-trip-box-body{
+    display: none;
+}
+@media(max-width:600px){
+    .trip-box-body{
+        display: none;
+    }
+    .small-trip-box-body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+    }
+}
