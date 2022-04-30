@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node cohostBackEnd/server.js",
+    "start": "node cohostBackEnd/Server.js",
     "server": "nodemon cohostBackEnd/server.js",
     "client": "npm start --prefix cohostFrontEnd",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cohostFrontEnd && npm run build --prefix cohostFrontEnd"
