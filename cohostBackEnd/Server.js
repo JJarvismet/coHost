@@ -18,14 +18,16 @@ app.use(cors({
     origin: "http://localhost:3000",
     credentials: true
 }));
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+try{
+    mongoose.connect(process.env.MONGO_URI);
+}catch(e){
+    console.log('IT BROKE*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*')
+}
+
 const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
+db.on('error', console.error.bind(console, 'connection error:***************************************'));
 db.once('open', () => {
-    console.log('Database Connected');
+    console.log('*********Database Connected************************************************');
 });
 app.use(express.urlencoded({ extended: true }));
 app.use(jsonParser)
