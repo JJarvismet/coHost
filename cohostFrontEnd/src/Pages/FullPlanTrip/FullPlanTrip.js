@@ -81,12 +81,13 @@ const FullPlanTrip = () =>{
             </div>
             <div className="plan-trip-form col-10 col-md-8 col-xl-6">
                 <div className="input-dub">
-                    <input className="full-plan-form-item" type="text" placeholder='Trip Name' onChange={(e)=>{setName(e.target.value)}} value={seedInfo.name}/>
-                    <input className="full-plan-form-item" type="text" placeholder='Location' onChange={(e)=>{setLocation(e.target.value)}} value={seedInfo.location}/>
+                    <input className="full-plan-form-item" type="text" placeholder='Trip Name' onChange={(e)=>{setName(e.target.value)}} defaultValue={seedInfo.name}/>
+                    <input className="full-plan-form-item" type="text" placeholder='Location' onChange={(e)=>{setLocation(e.target.value)}} defaultValue={seedInfo.location}/>
                 </div>
                 <input className="full-plan-form-item" type="text" placeholder='Address' onChange={(e)=>{setAddress(e.target.value)}}/>
                 <div className="input-dub">
                     <input className="full-plan-form-item" type="date" max='2025/01/01' placeholder='Start Date' onChange={(e)=>{setStartDate(e.target.value)}}/>
+                    <span className='date-label'>to</span>
                     <input className="full-plan-form-item" type="date" max='2025/01/01' placeholder='End Date' onChange={(e)=>{setEndDate(e.target.value)}}/>                    
                 </div>
                 <input className="full-plan-form-item" type="text" placeholder='Cover Image Url' onChange={(e)=>{setCoverImage(e.target.value)}}/>

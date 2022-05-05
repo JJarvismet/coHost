@@ -45,14 +45,17 @@ const GroceryList = () =>{
     return(
         <div className='GroceryList'>
             <div className="products-box">
-            {list && list.map(product=>(
-                <div className="grocery-group" key={product.product.id}>
-                    <ProductCard product={product.product}/>
-                    {product.qty && product.qty.map(qtyString => (
-                        <span className="qty">{qtyString}</span>
-                    ))}
-                </div>
-            ))}
+                {list && list.map(product=>(
+                    <div className="grocery-group" key={product.product.id}>
+                        <ProductCard product={product.product}/>
+                        {product.qty && product.qty.map(qtyString => (
+                            <span className="qty">{qtyString}</span>
+                        ))}
+                    </div>
+                ))}
+                {list.length<=0 &&
+                    <div className="list-filler">there are no items on the grocery list, yet</div>
+                }
             </div>
         </div>
     )

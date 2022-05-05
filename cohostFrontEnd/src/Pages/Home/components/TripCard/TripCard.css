@@ -136,6 +136,7 @@
         width: 2rem;
         z-index: 3;
         padding: 0;
+        padding-top: .25rem;
     }
     .guest{
         height: 1.75rem;

@@ -9,10 +9,10 @@ export const validateTripData = (tripData) => {
     if(new Date(startDate).getTime() < Date.now()-100000000){
         return {valid:false, message:"Trip can't start before its planned"}
     }
-    if(name.length > 12){
+    if(name.length > 16){
         return {valid:false, message:"Trip name can't be over 16 characters"}
     }
-    if(location.length > 16){
+    if(location.length > 24){
         return {valid:false, message:"Trip location can't be over 24 characters"}
     }
     return {valid:true};

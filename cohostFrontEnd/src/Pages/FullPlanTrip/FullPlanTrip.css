@@ -45,6 +45,13 @@
     background-color: rgb(240, 240, 240);
     margin-top: 2rem;
 }
+.date-label{
+    color: rgb(177, 177, 177);
+    height: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
 textarea.edit-form-item{
     height: 35%;
     resize: none;
@@ -105,6 +112,9 @@ textarea.full-plan-form-item{
     .full-plan-form-item, .edit-form-item{
         height: 3rem;
         font-size: 1rem;
+    }
+    .date-label{
+        height: 3rem;
     }
     .edit-trip-btns{
         justify-content: space-between;

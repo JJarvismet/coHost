@@ -113,6 +113,10 @@
     margin-bottom: .5rem;
     margin-top: -.5rem;
 }
+.list-filler{
+    margin-bottom: 2rem;
+    font-style: italic;
+}
 @media(max-width:1000px){
     .trip-details{
         flex-direction: column;

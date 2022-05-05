@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import './TripGuests.css';
-import { setGuests, departTrip } from '../../../../features/trip/tripSlice'
+import { setGuests, departTrip } from '../../../../features/trip/tripSlice';
+import {toast} from 'react-toastify';
 
 
 const TripGuests = () =>{
@@ -28,6 +29,8 @@ const TripGuests = () =>{
     const getInviteCode = async() => {
         const response = await axios.get(`/api/trip/invite/${currentTrip._id}`);
         setCode(response.data);
+        navigator.clipboard.writeText(`${window.location.origin}/${trip._id}/${response.data}`);
+        toast.success('Invite link copied to clipboard');
     }
 
     const leaveTrip = () => {
@@ -38,7 +41,9 @@ const TripGuests = () =>{
     return(
         <div className='TripGuests'>
             <div className="invite-box">
-                <button onClick={()=>{getInviteCode()}}>Get invite link</button>
+                {!code &&
+                    <button onClick={()=>{getInviteCode()}}>Get invite link</button>
+                }
                 {code &&
                     <input type="text" disabled value={`${window.location.origin}/${trip._id}/${code}`}/>
                 }
