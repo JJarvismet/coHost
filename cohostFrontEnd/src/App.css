@@ -6,7 +6,6 @@
     font-family: 'Outfit', sans-serif;
 }
 .App{
-    overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
 }

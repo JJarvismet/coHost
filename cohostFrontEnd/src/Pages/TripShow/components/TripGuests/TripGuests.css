@@ -112,7 +112,13 @@
     border: 1px solid rgb(200,200,200);
 }
 
-@media(max-width:1100px){
+@media(max-width:1250px){
+    .form-radio>label{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:1150px){
     .guest-box{
         flex-direction:column-reverse;
         align-items: center;
@@ -123,9 +129,7 @@
     }
     .rsvp>form{
         margin: 0;
-    }
-    .form-radio>label{
-        font-size: 1rem;
+        padding: 0 2rem;
     }
     .form-radio{
         height: max-content;
