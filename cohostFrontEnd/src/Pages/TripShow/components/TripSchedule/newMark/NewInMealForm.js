@@ -53,7 +53,7 @@ const NewInMealForm = () =>{
                 method: 'GET',
                 url:'https://api.spoonacular.com/food/products/search',
                 params: {
-                    apiKey: '42d51b439e764547aaeaf8103aa6588d',
+                    apiKey: process.env.REACT_APP_SPOON,
                     query: searchTerm,
                     number: 12
                 }
